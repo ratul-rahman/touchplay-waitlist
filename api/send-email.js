@@ -1,4 +1,4 @@
-export default async function handler(req, res) {
+module.exports = async function handler(req, res) {
   // Add CORS headers
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS');
@@ -45,6 +45,7 @@ export default async function handler(req, res) {
     };
 
     // (rest of your code unchanged)
+    const fetch = (...args) => import('node-fetch').then(({default: fetch}) => fetch(...args));
     const response = await fetch('https://api.resend.com/emails', {
       method: 'POST',
       headers: {
