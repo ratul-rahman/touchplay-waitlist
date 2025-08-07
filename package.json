@@ -1,7 +1,7 @@
 {
   "name": "touchplay-waitlist",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -11,9 +11,11 @@
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.39.0",
+    "@vercel/node": "^2.3.0",
     "lucide-react": "^0.263.1",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "resend": "^6.0.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.30.1",
@@ -30,6 +32,6 @@
     "postcss": "^8.4.32",
     "tailwindcss": "^3.4.0",
     "terser": "^5.43.1",
-    "vite": "^5.0.8"
+    "vite": "^7.1.0"
   }
 }
