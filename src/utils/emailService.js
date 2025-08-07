@@ -6,8 +6,8 @@ const getApiUrl = () => {
   }
   
   // If we have a custom API URL set
-  if (import.meta.env.VITE_API_URL) {
-    return import.meta.env.VITE_API_URL;
+  if (import.meta.env.BASE_URL) {
+    return import.meta.env.BASE_URL;
   }
   
   // For production, use the same domain as the frontend
