@@ -53,9 +53,7 @@ module.exports = async function handler(req, res) {
         <div style="max-width: 600px; margin: 0 auto; background: white; border-radius: 16px; overflow: hidden; margin-top: 40px; margin-bottom: 40px; box-shadow: 0 20px 40px rgba(0,0,0,0.1);">
           
           <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 40px; text-align: center;">
-            <div style="background: white; width: 60px; height: 60px; border-radius: 50%; margin: 0 auto 20px; display: flex; align-items: center; justify-content: center;">
-              <div style="font-size: 24px;">🎮</div>
-            </div>
+            <img src="${origin}/favicon.svg" alt="TouchPlay Logo" style="width: 60px; height: 60px; margin: 0 auto 20px; display: block;" />
             <h1 style="color: white; margin: 0; font-size: 28px; font-weight: 700;">Welcome to TouchPlay!</h1>
             <p style="color: rgba(255,255,255,0.9); margin: 10px 0 0; font-size: 16px;">The AI-native platform for high-ROI playable ads</p>
           </div>
@@ -92,7 +90,7 @@ module.exports = async function handler(req, res) {
         </div>
       </body>
       </html>
-      ` // (keep your HTML as is)
+      `
     };
 
     // (rest of your code unchanged)
